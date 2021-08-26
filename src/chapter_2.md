@@ -11,7 +11,7 @@ nordvpn connect
 The program will ask for your credentials, so that's not a part of the configuration I'm talking about. The real annoyance is that you won't be able to connect to your local network once you're connected UNLESS you do this next part, which is important for a guy who keeps most of his files on a server connected by a few runs of CAT6.
 
 ```shell
-nordvpn whitelist add subnet 192.168.<somenumber>.0/24
+sudo nordvpn whitelist add subnet 192.168.<somenumber>.0/24
 ```
 
 That number in the middle is going to depend on how your home network is configured. It could be zero, one, two, blue, whatever. The final digit is gonna be zero and I have no idea what the 24 is for, but the point is that UNLESS YOU DO THIS, your computer will only be able to connect to things through the VPN itself. Some other guy mentioned needing to whitelist his DNS server (via `nordvpn set dns`), but I have not experienced this.
