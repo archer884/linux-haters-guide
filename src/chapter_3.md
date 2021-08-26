@@ -27,6 +27,8 @@ See that text after the first colon? That's the actual name of the font. If you 
 }
 ```
 
+> Note: Your machine may be convinced that `CaskaydiaCove Nerd Font` is *not* monospace. In that case, try `CaskaydiaCove Nerd Font Mono` because... reasons. I have no idea why this would help. The original *should* be monospace in the first place, but maybe that varies from one version of the font to the next.
+
 ```yaml
 # Alacritty font configuration
 font:

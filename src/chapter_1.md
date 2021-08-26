@@ -8,7 +8,7 @@ You're going to need a .gitconfig file. Here's mine, largely inspired by Keith D
 
 ```
 [alias]
-	co = checkout
+    co = checkout
     fp = format-patch -C -M --no-binary -o C:/Patches
     pub = !git push origin HEAD:master && git push . HEAD:master && git checkout master
     # New branch
@@ -53,16 +53,16 @@ You're going to need a .gitconfig file. Here's mine, largely inspired by Keith D
     wipe = clean -xdf
 
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
 
 [pull]
-	rebase = true
+    rebase = true
 
 [init]
-	defaultBranch = master
+    defaultBranch = master
 ```
 
 ## Rust
