@@ -17,7 +17,7 @@ There. Now you can log into multiple separate GitHub accounts automagically and 
 
 ## Alternative git authorship
 
-Wanna commit something but don't want your normal email address on it? I got you, fam. (Or, actually, [this guy does](https://stackoverflow.com/questions/8337071/different-gitconfig-for-a-given-subdirectory) I like his strategy better than the one I was going to tell you about.)
+Wanna commit something but don't want your normal email address on it? I got you, fam. (Or, actually, [this guy does](https://stackoverflow.com/questions/8337071/different-gitconfig-for-a-given-subdirectory). I like his strategy better than the one I was going to tell you about.)
 
 What you can do is create a subdirectory (like, if your code is usually under `~/src`, just use `~/src/foo` instead) and configure git to use a little extra configuration in the event that you're editing something found in that subdirectory. Cool, right? It looks like this:
 
