@@ -41,3 +41,5 @@ ln -s /some/ridiculous/path /less/ridiculous/path
 Links are infinitely superior to mount points because this link will start working at whatever time you choose to actually mount this thing. I can hear you already: "But John, you suave, sexy software savant, what if it gets mounted in a different place next time?" Well, it won't. Your computer isn't that creative: the mount point is deterministic and based on your user id, the thing doing the mounting (I'm assuming that's what gvfs is?), and the thing being mounted.
 
 Anyway, even if you change GUIs and it changes the path, just change the damn link. It ain't rocket surgery, and unlike the whole fstab thing it will at least WORK.
+
+<!-- FIXME: see if this works https://help.ubuntu.com/community/MountCifsFstab -->
