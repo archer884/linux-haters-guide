@@ -1,5 +1,29 @@
 # Chapter 2: Networking
 
+## ssh
+
+The best guide for setting up key pairs is straight from [github.com](https://docs.github.com/en/authentication/connecting-to-github-with-ssh). I'll provide you with the basic gist of it.
+
+To generate a key:
+```
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+Do whatever you want with your passphrase. Passphrases are NOT annoying on Linux, but they may be on other platforms. At least with Gnome, the shell will ask if you'd like to automagically unlock your key any time you log on. (Which is awesome, obviously.) In order to enable that behavior, you need to continue on to the next step.
+
+```shell
+❯ eval "$(ssh-agent -s)"
+> Agent pid 59566
+❯ ssh-add ~/.ssh/id_ed25519
+```
+
+The final step is optional; you would only do this if you've got some server for which you're just tired of entering the password over and over and *over* and ***over....***
+
+```shell
+❯ ssh-copy-id <username>@<host>
+# ...ssh-copy-id will ask for your password, etc...
+```
+
 ## Nordvpn
 
 Installing nordvpn is annoying and I forget how. For right now, let's talk about how to configure it. You can basically just open up your terminal and punch in the following:
