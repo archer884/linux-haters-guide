@@ -31,3 +31,15 @@ alias open=xdg-open
 Problem solved.
 
 Well, not *solved,* really. Any Windows shell solves this by allowing you to simply prefix the path itself with an ampersand, but WE CAN'T HAVE NICE THINGS CAN WE.
+
+## Bluetooth
+
+Fuck me running, why can't we have working Bluetooth? Well, because... because fuck you in particular. That's why.
+
+Anyway, if your symptom is that A) a device refuses to autoconnect or B) a device refuses to connect at all but instead shows "disconnected" when you attempt to pair it, try this:
+
+```shell
+❯ bluetoothctl trust <mac address of device>
+```
+
+To get the mac address of your device, look under bluetooth devices (under the bluetooth settings menu) and click on the device. The "address" shown will be your device's mac address. It'll be some kind of colon-delimited hexadecimal vomit.
