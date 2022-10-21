@@ -24,6 +24,14 @@ The final step is optional; you would only do this if you've got some server for
 # ...ssh-copy-id will ask for your password, etc...
 ```
 
+### Adding a key to a server
+
+This is way easier than using secure copy or whatever. I mean, for one thing, it automagically figures out which key to copy and where to put it.
+
+```shell
+❯ ssh-copy-id -i ~/.ssh/id_ed25519 archer@carbon.local
+```
+
 ## Nordvpn
 
 Installing nordvpn is annoying and I forget how. For right now, let's talk about how to configure it. You can basically just open up your terminal and punch in the following:
